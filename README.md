@@ -1,24 +1,8 @@
-# Haste
+# PasteBin
 
-Haste is an open-source pastebin software written in node.js, which is easily
+PasteBin is an open-source pastebin software written in node.js, which is easily
 installable in any network.  It can be backed by either redis or filesystem,
-and has a very easy adapter interface for other stores.  A publicly available
-version can be found at [hastebin.com](http://hastebin.com)
-
-Major design objectives:
-
-* Be really pretty
-* Be really simple
-* Be easy to set up and use
-
-Haste works really well with a little utility called
-[haste-client](https://github.com/seejohnrun/haste-client), allowing you
-to do things like:
-
-`cat something | haste`
-
-which will output a URL to share containing the contents of `cat something`'s
-STDOUT.  Check the README there for more details and usages.
+and has a very easy adapter interface for other stores. 
 
 ## Tested Browsers
 
@@ -98,8 +82,6 @@ something like:
 ```
 
 where `path` represents where you want the files stored.
-
-File storage currently does not support paste expiration, you can follow [#191](https://github.com/seejohnrun/haste-server/issues/191) for status updates.
 
 ### Redis
 
@@ -236,36 +218,8 @@ your bucket:
 }
 ```
 
-## Author
+## PasteBin is a fork of hastebin
+Original Authors and source, and License can be found below
 
-John Crepezzi <john.crepezzi@gmail.com>
-
-## License
-
-(The MIT License)
-
-Copyright © 2011-2012 John Crepezzi
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of
-this software and associated documentation files (the ‘Software’), to deal in
-the Software without restriction, including without limitation the rights to
-use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
-of the Software, and to permit persons to whom the Software is furnished to do
-so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED ‘AS IS’, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE
-
-### Other components:
-
-* jQuery: MIT/GPL license
-* highlight.js: Copyright © 2006, Ivan Sagalaev
-* highlightjs-coffeescript: WTFPL - Copyright © 2011, Dmytrii Nagirniak
+* [haste-client](https://github.com/seejohnrun/haste-client)
+* [haste-server](https://github.com/seejohnrun/haste-server)
